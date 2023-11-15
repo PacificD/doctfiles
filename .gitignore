@@ -1,0 +1,6 @@
+.oh-my-zsh
+.DS_Store
+
+nvim/lazy-lock.json
+
+nvim/stylua.toml
