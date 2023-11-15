@@ -15,6 +15,14 @@ rm -r ~/.config/nvim
 ln -s ~/dotfiles/nvim ~/.config/nvim
 ```
 
+## iterm2
+
+**Open iterm with tmux**:
+
+Profiles > General > Command > Send text at start:
+
+`tmux ls && read tmux_session && tmux attach -t ${tmux_session:-default} || tmux new -s ${tmux_session:-default}`
+
 ## Neovim
 
 ## oh-my-zsh
