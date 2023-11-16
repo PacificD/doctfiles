@@ -1,4 +1,4 @@
-# My doctfiles
+# My dotfiles
 
 ![doct](https://utfs.io/f/d7380515-2b97-42d5-9846-699b909912ff_doct.png)
 
@@ -9,7 +9,7 @@
 use `Symlink` link `~/.config/nvim` to `~/doctfiles/nvim`
 
 ```bash
-mkdir ~/doctfiles/nvim
+mkdir ~/dotfiles/nvim
 mv ~/.config/nvim/* ~/dotfiles/nvim/
 rm -r ~/.config/nvim
 ln -s ~/dotfiles/nvim ~/.config/nvim
