@@ -6,13 +6,13 @@
 
 ## Setup
 
-use `Symlink` link `~/.config/nvim` to `~/doctfiles/nvim`
+use `Symlink` link `~/.config/nvim` to `doctfiles/nvim`
 
 ```bash
-mkdir ~/dotfiles/nvim
-mv ~/.config/nvim/* ~/dotfiles/nvim/
-rm -r ~/.config/nvim
-ln -s ~/dotfiles/nvim ~/.config/nvim
+cp -r ~/.config/nvim ~/.config/nvim.bak
+rm -rf ~/.config/nvim
+cd dotfiles
+ln -s $PWD/nvim ~/.config/nvim
 ```
 
 ## iterm2
