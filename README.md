@@ -28,3 +28,16 @@ Profiles > General > Command > Send text at start:
 ## oh-my-zsh
 
 [setup](https://gist.github.com/n1snt/454b879b8f0b7995740ae04c5fb5b7df)
+
+### alias
+
+```bash
+alias vim="nvim"
+alias zshrc="nvim ~/.zshrc"
+alias szsh="source ~/.zshrc"
+alias vimrc="nvim ~/.config/nvim/init.lua"
+
+alias g="git"
+
+alias my-ip="ipconfig getifaddr en0"
+```
