@@ -5,10 +5,18 @@ return {
   { "rose-pine/neovim", lazy = true }, -- rose-pine rose-pine-moon rose-pine-dawn
   { "glepnir/zephyr-nvim", lazy = true },
   { "marko-cerovac/material.nvim", lazy = true }, -- material material-oceanic material-deep-ocean material-palenight material-lighter material-darker
+  { "craftzdog/solarized-osaka.nvim", lazy = true },
   {
     "folke/tokyonight.nvim",
     lazy = true,
-    opts = { style = "moon" },
+    opts = {
+      style = "moon",
+      styles = {
+        sidebars = "transparent",
+        floats = "transparent",
+      },
+      transparent = false,
+    },
     -- tokyonight tokyonight-night tokyonight-moon tokyonight-day tokyonight-storm
   },
   {
@@ -35,7 +43,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin-mocha", -- onedark_vivid
+      colorscheme = "material-oceanic", -- onedark_vivid
     },
   },
 }
