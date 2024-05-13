@@ -29,6 +29,21 @@ Profiles > General > Command > Send text at start:
 
 [setup](https://gist.github.com/n1snt/454b879b8f0b7995740ae04c5fb5b7df)
 
+## Nerdfonts
+
+- JetBrainsMono Nerd Font
+- Monaspace Nerd Font
+- Firacode Nerd Font
+- Iosevka Nerd Font
+
+```bash
+brew tap homebrew/cask-fonts
+
+brew search font-mona
+
+brew install font-monaspace-nerd-font
+```
+
 ### alias
 
 ```bash
