@@ -53,7 +53,8 @@ else
   end
 end
 
-req_body = { "contents" => [{ "parts" => [{ "text" => ARGV[0] }] }] }.to_json 
+input_string = ARGV[0].dup.force_encoding('UTF-8')
+req_body = JSON.generate({ "contents" => [{ "parts" => [{ "text" => input_string }] }] }) 
 uri = URI("#{proxy}/v1beta/models/gemini-pro:generateContent?key=#{token}")
 req = Net::HTTP::Post.new(uri)
 req.add_field('Content-Type', 'application/json')
