@@ -24,4 +24,3 @@ keymap("n", "<leader>=", "<C-W>v", { desc = "Split window right" })
 -- leader
 keymap("n", "<leader>t", "<cmd>Translate<cr>", { desc = "Translate" })
 keymap("n", "<leader>fml", "<cmd>CellularAutomaton make_it_rain<CR>", { desc = "Make it rain" })
-
