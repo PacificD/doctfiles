@@ -1,4 +1,13 @@
 return {
+  -- {
+  --   -- If you love transparent term, but your favourite Neovim color scheme doesn't
+  --   "tribela/transparent.nvim",
+  --   event = "VimEnter",
+  --   config = true,
+  --   auto = true, -- Automatically applies transparent
+  --   extra_groups = {}, -- If you want to add some groups to be transparent. eg: { 'Pmenu', 'CocFloating' }
+  --   excludes = {}, -- If you want to excludes from default transparent groups. eg: { 'LineNr' }
+  -- },
   { "ellisonleao/gruvbox.nvim", lazy = true },
   { "Mofiqul/dracula.nvim", lazy = true },
   { "rebelot/kanagawa.nvim", lazy = true }, -- kanagawa kanagawa-wave kanagawa-dragon kanagawa-lotus
@@ -11,7 +20,7 @@ return {
     "AlexvZyl/nordic.nvim",
     lazy = true,
     opts = {
-      transparent_bg = true,
+      transparent_bg = false,
     },
   },
   {
@@ -29,11 +38,11 @@ return {
     lazy = true,
     opts = {
       style = "moon",
-      styles = {
-        sidebars = "transparent",
-        floats = "transparent",
-      },
-      transparent = true,
+      -- styles = {
+      --   sidebars = "transparent",
+      --   floats = "transparent",
+      -- },
+      -- transparent = true,
     },
     -- tokyonight tokyonight-night tokyonight-moon tokyonight-day tokyonight-storm
   },
@@ -81,7 +90,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "cyberdream", -- onedark_vivid
+      colorscheme = "tokyonight", -- onedark_vivid
     },
   },
 }
